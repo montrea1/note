@@ -12,10 +12,12 @@
 - 服务器调优
  #### 常见通用join查询
  - sql执行顺序
-   - 手写
-     - ![avatar](/img/sql_writer.png)
-   - 机读
-     - ![avatar](/img/sql_read.png)
+
+   ​
+   - ![avatar](/img/sql_writer.png)
+
+   ​
+
    - 总结
     - ![avatar](/img/sql_parse.png)
  - join图
@@ -28,7 +30,7 @@
             tableB b
         on 
             a.key=b.key
-        ```
+       ```
     - left join on
       ![avatar](/img/left_join_on.png)
       ``` sql
@@ -38,7 +40,7 @@
             tableB b
         on 
             a.key=b.key
-         ```
+      ```
     - right join on
       ![avatar](/img/right_join_on.png)
       ``` sql
@@ -48,10 +50,10 @@
             tableB b
         on 
             a.key=b.key
-         ```
+      ```
     - left join on null
        ![avatar](/img/left_join_on_null.png)
-       
+
        ``` sql
         select <select_list>
         from tableA a
@@ -63,7 +65,7 @@
             b.key is null
        ```
     - right join on null
-     ![avatar](/img/right_join_on_null.png)
+       ![avatar](/img/right_join_on_null.png)
 
      ``` sql
       select <select_list>
@@ -76,7 +78,7 @@
           b.key is null
      ```
     - full outer join   mysql不支持full outer
-    ![avatar](/img/full_outer_join.png)
+      ![avatar](/img/full_outer_join.png)
     ```sql
         selcet <select_list>
         from tableA a
@@ -99,7 +101,7 @@
             e.deptId=d.id  ;
     ```
     - full outer join null
-    ![avatar](/img/full_outer_join_null.png)
+      ![avatar](/img/full_outer_join_null.png)
     ```sql
         selecet <selecet_list>
         from tableA a
